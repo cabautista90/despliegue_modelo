@@ -1,0 +1,11 @@
+# Exported from Render on 2024-08-23T02:33:22Z
+services:
+- type: web
+  name: estd_caso-2
+  runtime: python
+  repo: https://github.com/ENiko-Gh/estd_caso
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn your_application.wsgi
+version: "1"
